@@ -306,9 +306,9 @@ public class SubscriptionService {
         }
 
         /**
-         * The date on which the first payment should be charged. Must be within one year of creation and on
-         * or after the [mandate](#core-endpoints-mandates)'s `next_possible_charge_date`. When blank, this
-         * will be set as the mandate's `next_possible_charge_date`.
+         * The date on which the first payment should be charged. Must be on or after the
+         * [mandate](#core-endpoints-mandates)'s `next_possible_charge_date`. When blank, this will be set as
+         * the mandate's `next_possible_charge_date`.
          */
         public SubscriptionCreateRequest withStartDate(String startDate) {
             this.startDate = startDate;
