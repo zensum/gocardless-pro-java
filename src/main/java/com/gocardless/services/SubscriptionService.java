@@ -194,7 +194,7 @@ public class SubscriptionService {
 
         /**
          * [ISO 4217](http://en.wikipedia.org/wiki/ISO_4217) currency code. Currently `GBP`, `EUR`, `SEK`,
-         * and `DKK` are supported.
+         * `DKK`, `AUD`, `NZD` and `CAD` are supported.
          */
         public SubscriptionCreateRequest withCurrency(String currency) {
             this.currency = currency;

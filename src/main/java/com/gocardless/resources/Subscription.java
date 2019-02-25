@@ -107,7 +107,7 @@ public class Subscription {
 
     /**
      * [ISO 4217](http://en.wikipedia.org/wiki/ISO_4217) currency code. Currently `GBP`, `EUR`, `SEK`,
-     * and `DKK` are supported.
+     * `DKK`, `AUD`, `NZD` and `CAD` are supported.
      */
     public String getCurrency() {
         return currency;
