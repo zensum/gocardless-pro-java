@@ -64,3 +64,8 @@ artifacts {
     archives javadocJar
     archives sourcesJar
 }
+
+wrapper {
+    description = 'Generates gradlew[.bat] scripts for faster execution'
+    gradleVersion = '5.1'
+}
