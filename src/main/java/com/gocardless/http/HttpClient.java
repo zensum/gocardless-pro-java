@@ -157,6 +157,10 @@ public class HttpClient {
 
     private GoCardlessException handleErrorResponse(Response response) {
         try {
+            if(response.body().contentLength() == 0) {
+                int code = response.code();
+                throw new IllegalStateException("Body was empty, got response code " + code);
+            }
             String responseBody = response.body().string();
             return responseParser.parseError(responseBody);
         } catch (IOException e) {
